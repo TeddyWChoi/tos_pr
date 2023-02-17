@@ -74,7 +74,7 @@ INTRO
 	background: url('./images/logo_big.png') no-repeat center center;
 	cursor: pointer;
 }
-#intro p.img_mouse {
+#intro .img_mouse {
 	position: absolute;
 	top: 770px;
 	left: 50%;
@@ -82,9 +82,21 @@ INTRO
 	z-index: 999;
 	width: 60px;
     height: 90px;
-	background: url('./images/img_mouse.png') no-repeat center center;
+	/* background: url('./images/img_mouse.png') no-repeat center center; */
 	cursor: pointer;
+   
 }
+
+.img_mouse{
+    font-size: 5em;
+    animation: motion .7s /* 속도 */
+               linear 0s   /* 처음부터 끝까지 일정 속도로 진행 */
+               infinite alternate; /* 무한 반복 */
+  }
+  @keyframes motion {
+	0% {margin-top: 0px;} /* 처음 위치 */
+	100% {margin-top: 10px;} /* 마지막 위치 */
+  }
 
 #intro .copy_txt{
     color:#F0F0F0;
