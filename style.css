@@ -138,7 +138,7 @@ INTRO
 	opacity: 1;
 }
 
-p.btn_register {
+.btn_register {
 	position: absolute;
 	top: 647.9px;
 	left: 50%;
@@ -159,7 +159,7 @@ p.btn_register {
     background-repeat: repeat;
     background-image: url(https://static.papayaplay.com/static/assets/images/eos/event/preregister/bg_video_dark.png);
 }
-p.btn_register::before {
+.btn_register::before {
 	content: '';
 	display: block;
 	clear: both;
@@ -173,7 +173,7 @@ p.btn_register::before {
 	transition: opacity 0.3s;
 }
 
-p.btn_register:hover::before {
+.btn_register:hover::before {
 	opacity: 1;
 }
 
@@ -211,7 +211,7 @@ CONTENT - CONT01
     background-color: #000;
 }
 
-#event01_cont01 p.btn_register {
+#event01_cont01 .btn_register {
     top:700px;
 }
 
@@ -228,7 +228,7 @@ CONTENT - CONT02
     margin: 0 auto; */
 }
 
-#event01_cont02 p.btn_register {
+#event01_cont02 .btn_register {
     top:2580px;
 }
 
@@ -595,7 +595,7 @@ COMPLETE
 	background: url('./images/complete_img.png') no-repeat center center;
 	cursor: pointer;
 }
-#complete p.btn_ds {
+#complete .btn_ds {
 	position: absolute;
 	top: 1140px;
 	left: 50%;
@@ -606,7 +606,7 @@ COMPLETE
 	background: url('./images/btn_ds.png') no-repeat center center;
 	cursor: pointer;
 }
-#complete p.btn_ds::before {
+#complete .btn_ds::before {
 	content: '';
 	display: block;
 	clear: both;
@@ -619,10 +619,10 @@ COMPLETE
 	opacity: 0;
 	transition: opacity 0.3s;
 }
-#complete p.btn_ds:hover::before {
+#complete .btn_ds:hover::before {
 	opacity: 1;
 }
-#complete p.btn_pa {
+#complete .btn_pa {
 	position: absolute;
 	top: 1460px;
 	left: 50%;
@@ -633,7 +633,7 @@ COMPLETE
 	background: url('./images/btn_pa.png') no-repeat center center;
 	cursor: pointer;
 }
-#complete p.btn_pa::before {
+#complete .btn_pa::before {
 	content: '';
 	display: block;
 	clear: both;
@@ -646,7 +646,7 @@ COMPLETE
 	opacity: 0;
 	transition: opacity 0.3s;
 }
-#complete p.btn_pa:hover::before {
+#complete .btn_pa:hover::before {
 	opacity: 1;
 }
 #complete .content-wrapper-wrap{
