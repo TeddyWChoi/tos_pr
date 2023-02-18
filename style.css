@@ -11,6 +11,11 @@ body{
 	overflow: hidden;
 	background: #111110;
 }
+#tos-pre-register{
+    min-width: 910px;
+    overflow: hidden;
+    background: #111110;
+}
 
 /*******************************
 GNB
@@ -20,6 +25,7 @@ GNB
 	z-index: 8;
 	width: 100%;
 	height: 70px;
+    min-width: 910px;
 	background: rgba(0, 0, 0, 0.75);
 }
 
@@ -291,7 +297,7 @@ CONTENT - CONT04
 	width:100%;
 	max-width:800px;
     margin: 0 auto;
-    top: 650px;
+    top: 670px;
     margin-left: -400px;
     left: 50%;
 	
@@ -312,7 +318,7 @@ CONTENT - CONT04
 
 .content-wrapper .pre-register-wrapper
 {
-	margin-top:24px;
+	margin-top:27px;
 	margin-right:15px;
 	width:100%;
 	max-width: 470px;
@@ -511,7 +517,7 @@ FOOTER
 .footer-wrapper .footer--line
 {
 	height:1px;
-	width:100vw;
+	width:100%;
 	transform:translateY(-1px);
 	background-color:#646464;
 	margin-bottom:15px
@@ -682,4 +688,110 @@ COMPLETE
 	height: 206px;
 	background: url('./images/img_ch2.gif') no-repeat center center;
 	cursor: pointer;
+}
+
+/*******************************
+SIDE-BANNER
+*******************************/
+
+
+.side-banner-wrapper
+{
+	position:fixed;
+	bottom:50px;
+	right:10px;
+	/* width:320px; */
+	z-index:11
+}
+
+.side-banner-wrapper .banner-content
+{
+	width:100%
+}
+
+.side-banner-wrapper .banner-content>img
+{
+	width:100%;
+	transition:all .3s ease
+}
+
+.side-banner-wrapper .banner-content>img:hover
+{
+	transform:scale(0.95);
+}
+
+.side-banner-wrapper.show-banner
+{
+	right:10px;
+	opacity:1;
+	transition:all .6s ease-in
+}
+
+.side-banner-wrapper.hide-banner
+{
+	right:-384px;
+	opacity:0;
+	transition:all .6s ease-in
+}
+
+
+/*******************************
+POPUP
+*******************************/
+
+.popup-window
+{
+	position:fixed;
+	left:0;
+	top:0;
+	width:100vw;
+	height:100vh;
+	background-color:rgba(0,0,0,0.5);
+	z-index:2000
+}
+
+.popup-window .popup-container
+{
+	position:absolute;
+	width:90%;
+	max-width:487px;
+	min-width:300px;
+	height:auto;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	background:#2E3338E6 0 0 no-repeat padding-box;
+	box-shadow:0 0 10px #1AB9C9;
+	padding:15px;
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-start;
+	align-items:center
+}
+
+.popup-window .popup-container .popup-description
+{
+	width:100%;
+	color:#FFF;
+	font-family:"Roboto",sans-serif;
+	font-size:20px;
+	font-weight:500;
+	line-height:24px;
+	text-align:center
+}
+
+.popup-window .popup-container .btn-close
+{
+	margin-top:20px;
+	width:112px;
+	height:48px;
+	background-color:#1AB9C9;
+	font-family:'Roboto',sans-serif;
+	font-size:24px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	color:#FFF;
+	font-weight:900;
+	cursor:pointer
 }
